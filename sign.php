@@ -19,7 +19,7 @@ foreach ($str[1] as $key) {
 }
 // 使用cookie签到
 $time = time().rand(100,999);
-$time2 = $time + 3;
+$time2 = $time + 2;
 $url = 'http://www.smzdm.com/user/qiandao/jsonp_checkin?callback=jQuery'.'11100'.rand(1000,9999).rand(1000,9999).rand(1000,9999).rand(1000,9999).'_'.$time.'&_='.$time2;
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $url);
